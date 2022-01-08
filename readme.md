@@ -2,7 +2,7 @@
 
 Create In-Place confirmation question using the **Confirmation Button Custom Conrol**. Using this you can skip the process of adding a dialog and controller coding to handle opening of confirmation dialog and subsequent actions
 
-![./media/sample_demo.gif](screenshot.png)
+![Demo](sample_demo.gif)
 
 
 # Options
