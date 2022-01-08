@@ -3,14 +3,11 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+    xmlns:cc="pin.org.confirmButton.control"
 >
-    <Shell id="shell">
-        <App id="app">
-            <pages>
-                <Page id="page" title="{i18n>title}">
-                    <content />
-                </Page>
-            </pages>
-        </App>
-    </Shell>
+    
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+
 </mvc:View>
