@@ -5,9 +5,43 @@
     xmlns="sap.m"
     xmlns:cc="pin.org.confirmButton.control"
 >
-    
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    <App >
+        <Page id="page" title="Confirmation Button">
 
+        <Label text="Confirm Button Standalone" design="Bold" class="sapUiMediumMargin" />
+
+        <cc:ConfirmButton confirmText="Are you sure ? This might have an cascading effect" class="sapUiLargeMargin">
+            <cc:primaryButton>
+                <Button text="Delete" type="Reject" icon="sap-icon://delete"/>
+            </cc:primaryButton>
+
+            <cc:confirmButton>
+                <Button press="finallyDelete" class="sapUiSmallMarginEnd" type="Accept" icon="sap-icon://accept"/>
+            </cc:confirmButton>
+
+            <cc:rejectButton>
+                <Button  type="Reject" icon="sap-icon://decline"/>
+            </cc:rejectButton>
+        </cc:ConfirmButton>
+        <Label text="Confirm Button in a toolbar" design="Bold" class="sapUiMediumMargin" />
+        <Toolbar >
+            <Title text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+            <ToolbarSpacer/>
+            <Button text="Approve"/>
+            <cc:ConfirmButton confirmText="Are you sure ?" >
+                <cc:primaryButton>
+                    <Button text="Reject" type="Reject" icon="sap-icon://cancel"/>
+                </cc:primaryButton>
+
+                <cc:confirmButton>
+                    <Button press="finallyDelete" class="sapUiSmallMarginEnd" type="Accept" icon="sap-icon://accept"/>
+                </cc:confirmButton>
+
+                <cc:rejectButton>
+                    <Button  type="Reject" icon="sap-icon://decline"/>
+                </cc:rejectButton>
+            </cc:ConfirmButton>
+        </Toolbar>
+        </Page>
+    </App>
 </mvc:View>

@@ -9,7 +9,10 @@ sap.ui.define([
 
         return Controller.extend("pin.org.confirmButton.controller.MainView", {
             onInit: function () {
-
+                
+            },
+            finallyDelete : function(oEvent){
+                sap.m.MessageToast.show('Finally You can delete')
             }
         });
     });
