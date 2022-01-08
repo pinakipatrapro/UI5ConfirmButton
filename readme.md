@@ -14,6 +14,11 @@ Create In-Place confirmation question using the **Confirmation Button Custom Con
 	- confirmButton : 	Type(sap.m.Button) - The ok Button on whose press event the actual activity should happen
 	- rejectButton: 		Type(sap.m.Button) - The Cancel Button
 
+## Test Locally
+
+>Clone the repository | npm install --global @ui5/cli | npm  i | ui5 serve
+
 ## Credits
 
 This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
+
